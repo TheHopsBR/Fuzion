@@ -177,11 +177,11 @@ void UI::UpdateWeaponSettings()
 
 void Aimbot::RenderTab()
 {
-	const char* targets[] = { "PELVIS", "", "", "HIP", "LOWER SPINE", "MIDDLE SPINE", "UPPER SPINE", "NECK", "HEAD" };
+	const char* targets[] = { "PELVIS", "", "", "HIP", "LOWER SPINE", "MIDDLE SPINE", "UPPER SPINE", "NECK", "HS" };
 	const char* smoothTypes[] = { "Slow Near End", "Constant Speed", "Fast Near End" };
 	static char filterWeapons[32];
 
-	if (ImGui::Checkbox(XORSTR("Enabled"), &enabled))
+	if (ImGui::Checkbox(XORSTR("Ativar"), &enabled))
 		UI::UpdateWeaponSettings();
 	ImGui::Separator();
 
